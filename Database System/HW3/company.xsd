@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XSD document created with EditiX XML Editor (http://www.editix.com) at Sun Nov 23 20:52:07 PST 2014 -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:element name="company">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="Department" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element ref="Employee" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element ref="Division" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element ref="WorksFor" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+
+	
+<!-- definition of complex elements-->
+	<xs:element name="Department">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="deptId">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[A-Z][A-Z][A-Z]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="deptName" type="xs:string"/>
+				<xs:element name="deptAddr" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Employee">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="empId" type="xs:int"/>
+				<xs:element name="empName" type="xs:string"/>
+				<xs:element name="empPhone">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[1-9]{3}-[0-9]{3}-[0-9]{4}"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="empOffice" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Division">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="divId" type="xs:string"/>
+				<xs:element name="divName" type="xs:string"/>
+				<xs:element name="divPhone">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[1-9]{3}-[0-9]{3}-[0-9]{4}"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="housedDeptId">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[A-Z][A-Z][A-Z]"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="managerEmpId" type="xs:int"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="WorksFor">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="divId" type="xs:string"/>
+				<xs:element name="empId" type="xs:string"/>
+				<xs:element name="percentTime">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="0"/>
+							<xs:maxInclusive value="100"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

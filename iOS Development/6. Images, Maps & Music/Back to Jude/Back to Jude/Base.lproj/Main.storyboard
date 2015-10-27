@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Back_to_Jude" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uvp-Bs-smJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zau-eF-Tom"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Back to Jude" id="mvr-D3-Hzc">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="6U1-UA-JMp">
+                                            <connections>
+                                                <action selector="playAction:" destination="vXZ-lx-hvc" id="b3G-t8-YaJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UM2-sZ-fgO">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="u6r-ZV-z74"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="pause" id="mZ2-kd-oh4">
+                                        <connections>
+                                            <action selector="pauseAction:" destination="vXZ-lx-hvc" id="hrl-ZJ-RRh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="d71-Ct-1aP"/>
+                                    <barButtonItem title="stop" id="Vhd-7q-aEZ">
+                                        <connections>
+                                            <action selector="stopAction:" destination="vXZ-lx-hvc" id="vnA-Z5-IGY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jude.png" translatesAutoresizingMaskIntoConstraints="NO" id="5nL-3Q-nbW">
+                                <rect key="frame" x="67" y="97" width="241" height="339"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="339" id="etb-dJ-f4u"/>
+                                    <constraint firstAttribute="width" constant="241" id="o8T-Xp-ePB"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-iY-SFT">
+                                <rect key="frame" x="108" y="467" width="158" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="01P-Bh-WnZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="tng-oh-gdf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanges:" destination="vXZ-lx-hvc" eventType="valueChanged" id="psK-Nb-0dM"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="UM2-sZ-fgO" secondAttribute="trailing" constant="-16" id="57R-AM-ACj"/>
+                            <constraint firstItem="Uvp-Bs-smJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5oF-AR-OiZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uvp-Bs-smJ" secondAttribute="trailing" constant="-16" id="BeW-Ke-7nm"/>
+                            <constraint firstItem="UM2-sZ-fgO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Hul-aP-Uiq"/>
+                            <constraint firstAttribute="centerX" secondItem="5nL-3Q-nbW" secondAttribute="centerX" id="JPR-eZ-DoK"/>
+                            <constraint firstAttribute="centerX" secondItem="DiW-iY-SFT" secondAttribute="centerX" id="So9-ZB-9ok"/>
+                            <constraint firstItem="DiW-iY-SFT" firstAttribute="top" secondItem="5nL-3Q-nbW" secondAttribute="bottom" constant="31" id="gYf-eN-Y1P"/>
+                            <constraint firstItem="Uvp-Bs-smJ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="lMu-GJ-3pA"/>
+                            <constraint firstItem="5nL-3Q-nbW" firstAttribute="top" secondItem="Uvp-Bs-smJ" secondAttribute="bottom" constant="53" id="pw5-9c-dm1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UM2-sZ-fgO" secondAttribute="bottom" id="sKZ-95-xIl"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="playLabel" destination="6U1-UA-JMp" id="MgD-rU-PvI"/>
+                        <outlet property="sliderValue" destination="DiW-iY-SFT" id="fwP-nP-KPj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.5" y="135.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jude.png" width="300" height="400"/>
+    </resources>
+</document>

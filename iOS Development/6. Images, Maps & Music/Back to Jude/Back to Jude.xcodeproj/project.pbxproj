@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE40ECBF1BAFA23700379466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40ECBE1BAFA23700379466 /* AppDelegate.swift */; };
+		DE40ECC11BAFA23700379466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40ECC01BAFA23700379466 /* ViewController.swift */; };
+		DE40ECC41BAFA23700379466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE40ECC21BAFA23700379466 /* Main.storyboard */; };
+		DE40ECC61BAFA23700379466 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE40ECC51BAFA23700379466 /* Images.xcassets */; };
+		DE40ECC91BAFA23700379466 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE40ECC71BAFA23700379466 /* LaunchScreen.xib */; };
+		DE40ECD51BAFA23700379466 /* Back_to_JudeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40ECD41BAFA23700379466 /* Back_to_JudeTests.swift */; };
+		DE40ECDF1BAFA2DF00379466 /* jude.png in Resources */ = {isa = PBXBuildFile; fileRef = DE40ECDE1BAFA2DF00379466 /* jude.png */; };
+		DE40ECE51BAFA88700379466 /* Jude.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE40ECE41BAFA88700379466 /* Jude.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE40ECCF1BAFA23700379466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE40ECB11BAFA23700379466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE40ECB81BAFA23700379466;
+			remoteInfo = "Back to Jude";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE40ECB91BAFA23700379466 /* Back to Jude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Back to Jude.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE40ECBD1BAFA23700379466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE40ECBE1BAFA23700379466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE40ECC01BAFA23700379466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE40ECC31BAFA23700379466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE40ECC51BAFA23700379466 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE40ECC81BAFA23700379466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DE40ECCE1BAFA23700379466 /* Back to JudeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Back to JudeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE40ECD31BAFA23700379466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE40ECD41BAFA23700379466 /* Back_to_JudeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back_to_JudeTests.swift; sourceTree = "<group>"; };
+		DE40ECDE1BAFA2DF00379466 /* jude.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jude.png; sourceTree = "<group>"; };
+		DE40ECE41BAFA88700379466 /* Jude.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jude.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE40ECB61BAFA23700379466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE40ECCB1BAFA23700379466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE40ECB01BAFA23700379466 = {
+			isa = PBXGroup;
+			children = (
+				DE40ECBB1BAFA23700379466 /* Back to Jude */,
+				DE40ECD11BAFA23700379466 /* Back to JudeTests */,
+				DE40ECBA1BAFA23700379466 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE40ECBA1BAFA23700379466 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE40ECB91BAFA23700379466 /* Back to Jude.app */,
+				DE40ECCE1BAFA23700379466 /* Back to JudeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE40ECBB1BAFA23700379466 /* Back to Jude */ = {
+			isa = PBXGroup;
+			children = (
+				DE40ECBE1BAFA23700379466 /* AppDelegate.swift */,
+				DE40ECC01BAFA23700379466 /* ViewController.swift */,
+				DE40ECE41BAFA88700379466 /* Jude.mp3 */,
+				DE40ECDE1BAFA2DF00379466 /* jude.png */,
+				DE40ECC21BAFA23700379466 /* Main.storyboard */,
+				DE40ECC51BAFA23700379466 /* Images.xcassets */,
+				DE40ECC71BAFA23700379466 /* LaunchScreen.xib */,
+				DE40ECBC1BAFA23700379466 /* Supporting Files */,
+			);
+			path = "Back to Jude";
+			sourceTree = "<group>";
+		};
+		DE40ECBC1BAFA23700379466 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE40ECBD1BAFA23700379466 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE40ECD11BAFA23700379466 /* Back to JudeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE40ECD41BAFA23700379466 /* Back_to_JudeTests.swift */,
+				DE40ECD21BAFA23700379466 /* Supporting Files */,
+			);
+			path = "Back to JudeTests";
+			sourceTree = "<group>";
+		};
+		DE40ECD21BAFA23700379466 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE40ECD31BAFA23700379466 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE40ECB81BAFA23700379466 /* Back to Jude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE40ECD81BAFA23700379466 /* Build configuration list for PBXNativeTarget "Back to Jude" */;
+			buildPhases = (
+				DE40ECB51BAFA23700379466 /* Sources */,
+				DE40ECB61BAFA23700379466 /* Frameworks */,
+				DE40ECB71BAFA23700379466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Back to Jude";
+			productName = "Back to Jude";
+			productReference = DE40ECB91BAFA23700379466 /* Back to Jude.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE40ECCD1BAFA23700379466 /* Back to JudeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE40ECDB1BAFA23700379466 /* Build configuration list for PBXNativeTarget "Back to JudeTests" */;
+			buildPhases = (
+				DE40ECCA1BAFA23700379466 /* Sources */,
+				DE40ECCB1BAFA23700379466 /* Frameworks */,
+				DE40ECCC1BAFA23700379466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE40ECD01BAFA23700379466 /* PBXTargetDependency */,
+			);
+			name = "Back to JudeTests";
+			productName = "Back to JudeTests";
+			productReference = DE40ECCE1BAFA23700379466 /* Back to JudeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE40ECB11BAFA23700379466 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Appfish;
+				TargetAttributes = {
+					DE40ECB81BAFA23700379466 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					DE40ECCD1BAFA23700379466 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = DE40ECB81BAFA23700379466;
+					};
+				};
+			};
+			buildConfigurationList = DE40ECB41BAFA23700379466 /* Build configuration list for PBXProject "Back to Jude" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE40ECB01BAFA23700379466;
+			productRefGroup = DE40ECBA1BAFA23700379466 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE40ECB81BAFA23700379466 /* Back to Jude */,
+				DE40ECCD1BAFA23700379466 /* Back to JudeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE40ECB71BAFA23700379466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE40ECC41BAFA23700379466 /* Main.storyboard in Resources */,
+				DE40ECC91BAFA23700379466 /* LaunchScreen.xib in Resources */,
+				DE40ECE51BAFA88700379466 /* Jude.mp3 in Resources */,
+				DE40ECC61BAFA23700379466 /* Images.xcassets in Resources */,
+				DE40ECDF1BAFA2DF00379466 /* jude.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE40ECCC1BAFA23700379466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE40ECB51BAFA23700379466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE40ECC11BAFA23700379466 /* ViewController.swift in Sources */,
+				DE40ECBF1BAFA23700379466 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE40ECCA1BAFA23700379466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE40ECD51BAFA23700379466 /* Back_to_JudeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE40ECD01BAFA23700379466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE40ECB81BAFA23700379466 /* Back to Jude */;
+			targetProxy = DE40ECCF1BAFA23700379466 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE40ECC21BAFA23700379466 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE40ECC31BAFA23700379466 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE40ECC71BAFA23700379466 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE40ECC81BAFA23700379466 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE40ECD61BAFA23700379466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE40ECD71BAFA23700379466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE40ECD91BAFA23700379466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Back to Jude/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE40ECDA1BAFA23700379466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Back to Jude/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DE40ECDC1BAFA23700379466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Back to JudeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Back to Jude.app/Back to Jude";
+			};
+			name = Debug;
+		};
+		DE40ECDD1BAFA23700379466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Back to JudeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Back to Jude.app/Back to Jude";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE40ECB41BAFA23700379466 /* Build configuration list for PBXProject "Back to Jude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE40ECD61BAFA23700379466 /* Debug */,
+				DE40ECD71BAFA23700379466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE40ECD81BAFA23700379466 /* Build configuration list for PBXNativeTarget "Back to Jude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE40ECD91BAFA23700379466 /* Debug */,
+				DE40ECDA1BAFA23700379466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE40ECDB1BAFA23700379466 /* Build configuration list for PBXNativeTarget "Back to JudeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE40ECDC1BAFA23700379466 /* Debug */,
+				DE40ECDD1BAFA23700379466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE40ECB11BAFA23700379466 /* Project object */;
+}

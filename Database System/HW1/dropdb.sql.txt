@@ -1,0 +1,12 @@
+drop table DIANLIKEDREVIEWS;
+drop table DIANMANAGER;
+drop table DIANOWNER;
+drop table DIANRATE;
+drop table DIANRESERVATION;
+drop table DIANREVIEW;
+drop table DIANUSER;
+drop table DIANVFEA;
+drop table DIANVILLA;
+drop table DIANCOUPON;
+drop table DIANFEATURES;
+drop table DIANFVILLA;

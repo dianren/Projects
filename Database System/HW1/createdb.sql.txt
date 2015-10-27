@@ -1,0 +1,750 @@
+CREATE TABLE DIANVILLA ( VILLA_ID VARCHAR2(5),
+NAME VARCHAR2(6),
+OWNER VARCHAR2(3));
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil1', 'Fifi', 'U11');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil2', 'Lulu', 'U12');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil3', 'Penny', 'U13');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil4', 'Kiki', 'U11');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil5', 'Vivi', 'U11');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil6', 'Gigi', 'U11');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil7', 'Kitty', 'U12');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil8', 'Ellie', 'U13');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil9', 'Ali', 'U14');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil10', 'Kelley', 'U12');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil11', 'Dori', 'U12');
+
+INSERT INTO DIANVILLA (VILLA_ID, NAME, OWNER) 
+VALUES ('Vil12', 'Houti', 'U13');
+
+
+
+
+
+
+
+
+CREATE TABLE dianvfea ( VILLA_ID VARCHAR2(5),
+FEATURES VARCHAR2(4));
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil1', 'Fea1');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil2', 'Fea1');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil3', 'Fea1');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil4', 'Fea2');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil5', 'Fea4');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil6', 'Fea6');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil7', 'Fea3');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil8', 'Fea6');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil9', 'Fea5');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil10', 'Fea5');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil11', 'Fea2');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil12', 'Fea2');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil1', 'Fea2');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil3', 'Fea4');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil3', 'Fea5');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil7', 'Fea4');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil7', 'Fea5');
+
+INSERT INTO dianvfea (VILLA_ID, FEATURES) 
+VALUES ('Vil7', 'Fea6');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE dianreview ( REVIEW_ID VARCHAR2(5),
+USER_ID VARCHAR2(3),
+VILLA_ID VARCHAR2(4),
+TEXT VARCHAR2(49),
+RATING VARCHAR2(1));
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev1', 'U1', 'Vil1', 'Poor maintainance considering the price.', '2');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev2', 'U2', 'Vil3', 'Boring and Dull', '1');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev3', 'U4', 'Vil6', 'Love it!', '4');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev4', 'U2', 'Vil1', 'Best vila error', '2');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev5', 'U7', 'Vil1', 'Though not clean, has fantastic scenery around it', '3');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev6', 'U5', 'Vil2', 'not recommended', '1');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev7', 'U6', 'Vil1', 'Good one', '4');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev8', 'U4', 'Vil4', 'I gonna rent again and again', '5');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev9', 'U9', 'Vil3', 'Good work', '5');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev10', 'U3', 'Vil9', 'A must visit villa', '5');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev11', 'U10', 'Vil8', 'Nice', '1');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev13', 'U6', 'Vil7', 'poor one', '1');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev14', 'U1', 'Vil7', 'popular one', '4');
+
+INSERT INTO dianreview (REVIEW_ID, USER_ID, VILLA_ID, TEXT, RATING) 
+VALUES ('Rev15', 'U7', 'Vil3', 'wanna go back!', '5');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE dianlikedreviews ( REVIEW_ID VARCHAR2(5),
+USER_ID VARCHAR2(2));
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev1', 'U4');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev2', 'U7');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev3', 'U8');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev4', 'U9');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev5', 'U2');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev14', 'U2');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev15', 'U3');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev1', 'U2');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev1', 'U3');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev2', 'U4');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev5', 'U4');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev14', 'U4');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev14', 'U6');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev15', 'U6');
+
+INSERT INTO dianlikedreviews (REVIEW_ID, USER_ID) 
+VALUES ('Rev15', 'U7');
+
+
+
+
+
+
+
+
+
+CREATE TABLE dianuser ( ID VARCHAR2(3),
+EMAIL VARCHAR2(22),
+FIRST_NAME VARCHAR2(7),
+LAST_NAME VARCHAR2(7),
+DOB DATE,
+FAVORITE_VILLAS VARCHAR2(15));
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U1', 'jack_killer@gmail.com', 'Jackie', 'Jones', to_date('02/28/1983', 'MM-DD-YYYY'), 'Vil2,Vil4');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U2', 'Hello_macy@yahoo.com', 'Jessie', 'Jackson', to_date('03/04/1986', 'MM-DD-YYYY'), 'Vil8');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U3', 'john_black@hotmail.com', 'Tommy', 'Trojan', to_date('04/22/1990', 'MM-DD-YYYY'), 'Vil10,Vil3,Vil7');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U4', 'ny_robert@usc.edu', 'Niki', 'Nanjan', to_date('06/10/1980', 'MM-DD-YYYY'), 'Vil10,Vil4');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U5', 'cool_andrew@bbc.co.uk', 'Jalli', 'Shadan', to_date('11/27/1984', 'MM-DD-YYYY'), 'Vil1');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U6', 'coryphillip@voa.gov', 'Houtan', 'Khandan', to_date('06/06/1966', 'MM-DD-YYYY'), 'Vil3');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U7', 'DaneilJ@msnbc.com', 'Naz', 'Nazi', to_date('04/20/2000', 'MM-DD-YYYY'), 'Vil2,Vil4,Vil12');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U8', 'rohanau@cs.mit.edu', 'Ab', 'Bazi', to_date('12/12/1956', 'MM-DD-YYYY'), 'Vil1,Vil9');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U9', 'edmorales@houti.com', 'Ben', 'Ghazi', to_date('11/10/1973', 'MM-DD-YYYY'), 'Vil6');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U10', 'danamoon@louti.com', 'Carlos', 'Santana', to_date('07/07/1977', 'MM-DD-YYYY'), 'Vil11,Vil12');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U11', 'owner1@villa.com', 'Roberto', 'Carlos', to_date('05/05/1955', 'MM-DD-YYYY'), 'null');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U12', 'owner2@villa.com', 'De', 'Vilardo', to_date('04/04/1944', 'MM-DD-YYYY'), 'null');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U13', 'owner3@villa.com', 'villa', 'Blanka', to_date('11/11/1974', 'MM-DD-YYYY'), 'Vil1');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U14', 'ceo@villa.com', 'nino', 'bino', to_date('01/01/1991', 'MM-DD-YYYY'), 'Vil2');
+
+INSERT INTO dianuser (ID, EMAIL, FIRST_NAME, LAST_NAME, DOB, FAVORITE_VILLAS) 
+VALUES ('U15', 'manager2@villa.com', 'Bookish', 'Morinio', to_date('04/17/1950', 'MM-DD-YYYY'), 'null');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE dianfvilla ( ID VARCHAR2(3),
+FAVORITE_VILLAS VARCHAR2(5));
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U1', 'Vil2');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U2', 'Vil8');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U3', 'Vil10');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U4', 'Vil10');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U5', 'Vil1');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U6', 'Vil3');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U7', 'Vil2');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U8', 'Vil1');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U9', 'Vil6');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U10', 'Vil11');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U11', 'null');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U12', 'null');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U13', 'Vil1');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U14', 'Vil2');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U15', 'null');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U1', 'Vil4');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U3', 'Vil3');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U3', 'Vil7');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U4', 'Vil4');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U7', 'Vil4');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U7', 'Vil12');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U8', 'Vil9');
+
+INSERT INTO dianfvilla (ID, FAVORITE_VILLAS) 
+VALUES ('U10', 'Vil12');
+
+
+
+
+
+
+
+
+
+CREATE TABLE dianfeatures ( FEATURE_ID VARCHAR2(4),
+FEATURE_NAME VARCHAR2(14));
+
+INSERT INTO dianfeatures (FEATURE_ID, FEATURE_NAME) 
+VALUES ('Fea1', 'swimming pool');
+
+INSERT INTO dianfeatures (FEATURE_ID, FEATURE_NAME) 
+VALUES ('Fea2', 'Jacuzzi');
+
+INSERT INTO dianfeatures (FEATURE_ID, FEATURE_NAME) 
+VALUES ('Fea3', 'billiard table');
+
+INSERT INTO dianfeatures (FEATURE_ID, FEATURE_NAME) 
+VALUES ('Fea4', 'Xbox 360');
+
+INSERT INTO dianfeatures (FEATURE_ID, FEATURE_NAME) 
+VALUES ('Fea5', 'board games');
+
+INSERT INTO dianfeatures (FEATURE_ID, FEATURE_NAME) 
+VALUES ('Fea6', 'pets allowed');
+
+
+
+
+
+
+
+
+CREATE TABLE dianrate ( RATE_ID VARCHAR2(5),
+VILLA_ID VARCHAR2(5),
+START_DATE DATE,
+END_DATE DATE,
+RATE VARCHAR2(3));
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat1', 'Vil1', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '150');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat2', 'Vil2', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '100');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat3', 'Vil3', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '200');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat4', 'Vil4', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '130');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat5', 'Vil5', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '120');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat6', 'Vil6', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '140');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat7', 'Vil7', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '180');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat8', 'Vil8', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '300');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat9', 'Vil9', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '80');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat10', 'Vil10', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '250');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat11', 'Vil11', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '170');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat12', 'Vil12', to_date('01/01/2013', 'MM-DD-YYYY'), to_date('08/31/2013', 'MM-DD-YYYY'), '110');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat13', 'Vil1', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '120');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat14', 'Vil2', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '75');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat15', 'Vil3', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '160');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat16', 'Vil4', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '90');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat17', 'Vil5', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '80');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat18', 'Vil6', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '100');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat19', 'Vil7', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '150');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat20', 'Vil8', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '200');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat21', 'Vil9', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '50');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat22', 'Vil10', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '200');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat23', 'Vil11', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '120');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat24', 'Vil12', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), '90');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat25', 'Vil1', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '180');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat26', 'Vil2', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '120');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat27', 'Vil3', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '240');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat28', 'Vil4', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '150');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat29', 'Vil5', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '150');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat30', 'Vil6', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '180');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat31', 'Vil7', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '250');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat32', 'Vil8', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '400');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat33', 'Vil9', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '110');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat34', 'Vil10', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '320');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat35', 'Vil11', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '210');
+
+INSERT INTO dianrate (RATE_ID, VILLA_ID, START_DATE, END_DATE, RATE) 
+VALUES ('Rat36', 'Vil12', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), '140');
+
+
+
+
+
+
+CREATE TABLE dianreservation ( RESERVATION_ID VARCHAR2(5),
+USER_ID VARCHAR2(3),
+VILLA_ID VARCHAR2(5),
+START_DATE DATE,
+END_DATE DATE,
+COUPON_ID VARCHAR2(5),
+DEPOSIT NUMBER(3));
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res1', 'U1', 'Vil1', to_date('01/02/2013', 'MM-DD-YYYY'), to_date('01/04/2013', 'MM-DD-YYYY'), 'null', 50.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res2', 'U7', 'Vil2', to_date('01/05/2013', 'MM-DD-YYYY'), to_date('01/06/2013', 'MM-DD-YYYY'), 'null', 30.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res3', 'U2', 'Vil3', to_date('02/03/2013', 'MM-DD-YYYY'), to_date('02/07/2013', 'MM-DD-YYYY'), 'null', 60.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res4', 'U4', 'Vil4', to_date('02/04/2013', 'MM-DD-YYYY'), to_date('02/05/2013', 'MM-DD-YYYY'), 'null', 39.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res5', 'U4', 'Vil5', to_date('03/06/2013', 'MM-DD-YYYY'), to_date('03/12/2013', 'MM-DD-YYYY'), 'null', 40.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res6', 'U4', 'Vil6', to_date('04/23/2013', 'MM-DD-YYYY'), to_date('04/25/2013', 'MM-DD-YYYY'), 'null', 42.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res7', 'U6', 'Vil7', to_date('05/29/2013', 'MM-DD-YYYY'), to_date('06/01/2013', 'MM-DD-YYYY'), 'null', 60.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res8', 'U10', 'Vil8', to_date('07/30/2013', 'MM-DD-YYYY'), to_date('08/02/2013', 'MM-DD-YYYY'), 'null', 100.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res9', 'U3', 'Vil9', to_date('08/11/2013', 'MM-DD-YYYY'), to_date('08/12/2013', 'MM-DD-YYYY'), 'null', 24.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res10', 'U2', 'Vil10', to_date('08/19/2013', 'MM-DD-YYYY'), to_date('08/21/2013', 'MM-DD-YYYY'), 'null', 75.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res11', 'U5', 'Vil11', to_date('08/15/2013', 'MM-DD-YYYY'), to_date('08/17/2013', 'MM-DD-YYYY'), 'null', 51.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res12', 'U6', 'Vil12', to_date('08/27/2013', 'MM-DD-YYYY'), to_date('08/28/2013', 'MM-DD-YYYY'), 'null', 33.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res13', 'U2', 'Vil1', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('09/03/2013', 'MM-DD-YYYY'), 'null', 40.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res14', 'U5', 'Vil2', to_date('09/02/2013', 'MM-DD-YYYY'), to_date('09/03/2013', 'MM-DD-YYYY'), 'null', 25.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res15', 'U9', 'Vil3', to_date('09/15/2013', 'MM-DD-YYYY'), to_date('09/20/2013', 'MM-DD-YYYY'), 'Coup3', 36.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res16', 'U5', 'Vil4', to_date('10/01/2013', 'MM-DD-YYYY'), to_date('10/03/2013', 'MM-DD-YYYY'), 'Coup4', 27.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res17', 'U4', 'Vil5', to_date('10/15/2013', 'MM-DD-YYYY'), to_date('10/16/2013', 'MM-DD-YYYY'), 'null', 24.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res18', 'U5', 'Vil6', to_date('11/02/2013', 'MM-DD-YYYY'), to_date('11/04/2013', 'MM-DD-YYYY'), 'null', 30.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res19', 'U10', 'Vil7', to_date('11/06/2013', 'MM-DD-YYYY'), to_date('11/07/2013', 'MM-DD-YYYY'), 'null', 50.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res20', 'U9', 'Vil8', to_date('11/06/2013', 'MM-DD-YYYY'), to_date('11/10/2013', 'MM-DD-YYYY'), 'null', 60.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res21', 'U4', 'Vil9', to_date('11/10/2013', 'MM-DD-YYYY'), to_date('11/13/2013', 'MM-DD-YYYY'), 'null', 15.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res22', 'U4', 'Vil10', to_date('11/11/2013', 'MM-DD-YYYY'), to_date('11/13/2013', 'MM-DD-YYYY'), 'null', 60.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res23', 'U6', 'Vil11', to_date('12/01/2013', 'MM-DD-YYYY'), to_date('12/04/2013', 'MM-DD-YYYY'), 'null', 40.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res24', 'U5', 'Vil12', to_date('12/23/2013', 'MM-DD-YYYY'), to_date('12/26/2013', 'MM-DD-YYYY'), 'null', 30.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res25', 'U7', 'Vil1', to_date('01/12/2014', 'MM-DD-YYYY'), to_date('01/15/2014', 'MM-DD-YYYY'), 'Coup1', 48.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res26', 'U9', 'Vil2', to_date('01/06/2014', 'MM-DD-YYYY'), to_date('01/07/2014', 'MM-DD-YYYY'), 'Coup2', 34.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res27', 'U6', 'Vil2', to_date('02/05/2014', 'MM-DD-YYYY'), to_date('02/09/2014', 'MM-DD-YYYY'), 'null', 40.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res28', 'U5', 'Vil5', to_date('02/09/2014', 'MM-DD-YYYY'), to_date('02/15/2014', 'MM-DD-YYYY'), 'null', 50.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res29', 'U4', 'Vil8', to_date('03/18/2014', 'MM-DD-YYYY'), to_date('03/19/2014', 'MM-DD-YYYY'), 'null', 120.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res30', 'U2', 'Vil4', to_date('04/27/2014', 'MM-DD-YYYY'), to_date('04/30/2014', 'MM-DD-YYYY'), 'null', 50.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res31', 'U4', 'Vil10', to_date('05/29/2014', 'MM-DD-YYYY'), to_date('06/01/2014', 'MM-DD-YYYY'), 'null', 96.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res32', 'U9', 'Vil12', to_date('07/28/2014', 'MM-DD-YYYY'), to_date('08/02/2014', 'MM-DD-YYYY'), 'null', 42.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res33', 'U9', 'Vil7', to_date('08/11/2014', 'MM-DD-YYYY'), to_date('08/12/2014', 'MM-DD-YYYY'), 'null', 75.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res34', 'U7', 'Vil4', to_date('08/15/2014', 'MM-DD-YYYY'), to_date('08/21/2014', 'MM-DD-YYYY'), 'null', 50.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res35', 'U8', 'Vil8', to_date('08/13/2014', 'MM-DD-YYYY'), to_date('08/17/2014', 'MM-DD-YYYY'), 'null', 120.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res36', 'U3', 'Vil2', to_date('08/27/2014', 'MM-DD-YYYY'), to_date('08/28/2014', 'MM-DD-YYYY'), 'null', 40.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res37', 'U2', 'Vil11', to_date('06/20/2014', 'MM-DD-YYYY'), to_date('06/23/2014', 'MM-DD-YYYY'), 'null', 70.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res38', 'U1', 'Vil2', to_date('08/28/2014', 'MM-DD-YYYY'), to_date('08/30/2014', 'MM-DD-YYYY'), 'null', 40.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res39', 'U9', 'Vil1', to_date('04/10/2014', 'MM-DD-YYYY'), to_date('04/15/2014', 'MM-DD-YYYY'), 'null', 60.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res40', 'U9', 'Vil7', to_date('02/05/2014', 'MM-DD-YYYY'), to_date('02/09/2014', 'MM-DD-YYYY'), 'null', 75.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res41', 'U8', 'Vil7', to_date('02/09/2014', 'MM-DD-YYYY'), to_date('02/15/2014', 'MM-DD-YYYY'), 'null', 75.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res42', 'U5', 'Vil7', to_date('03/18/2014', 'MM-DD-YYYY'), to_date('03/19/2014', 'MM-DD-YYYY'), 'null', 75.0);
+
+INSERT INTO dianreservation (RESERVATION_ID, USER_ID, VILLA_ID, START_DATE, END_DATE, COUPON_ID, DEPOSIT) 
+VALUES ('Res43', 'U6', 'Vil1', to_date('05/12/2014', 'MM-DD-YYYY'), to_date('05/13/2014', 'MM-DD-YYYY'), 'Coup5', 51.0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE diancoupon ( COUPON_ID VARCHAR2(5),
+VILLA_ID VARCHAR2(4),
+START_DATE DATE,
+END_DATE DATE,
+DISCOUNT NUMBER(2));
+
+INSERT INTO diancoupon (COUPON_ID, VILLA_ID, START_DATE, END_DATE, DISCOUNT) 
+VALUES ('Coup1', 'Vil1', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('01/31/2014', 'MM-DD-YYYY'), 20.0);
+
+INSERT INTO diancoupon (COUPON_ID, VILLA_ID, START_DATE, END_DATE, DISCOUNT) 
+VALUES ('Coup2', 'Vil2', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), 15.0);
+
+INSERT INTO diancoupon (COUPON_ID, VILLA_ID, START_DATE, END_DATE, DISCOUNT) 
+VALUES ('Coup3', 'Vil3', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), 25.0);
+
+INSERT INTO diancoupon (COUPON_ID, VILLA_ID, START_DATE, END_DATE, DISCOUNT) 
+VALUES ('Coup4', 'Vil4', to_date('09/01/2013', 'MM-DD-YYYY'), to_date('12/31/2013', 'MM-DD-YYYY'), 10.0);
+
+INSERT INTO diancoupon (COUPON_ID, VILLA_ID, START_DATE, END_DATE, DISCOUNT) 
+VALUES ('Coup5', 'Vil1', to_date('01/01/2014', 'MM-DD-YYYY'), to_date('08/31/2014', 'MM-DD-YYYY'), 15.0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE dianowner ( OWNER_ID VARCHAR2(3),
+CONTACT_NUMBER VARCHAR2(12),
+MANAGED_BY VARCHAR2(3));
+
+INSERT INTO dianowner (OWNER_ID, CONTACT_NUMBER, MANAGED_BY) 
+VALUES ('U11', '111-111-1111', 'U15');
+
+INSERT INTO dianowner (OWNER_ID, CONTACT_NUMBER, MANAGED_BY) 
+VALUES ('U12', '222-222-2222', 'U15');
+
+INSERT INTO dianowner (OWNER_ID, CONTACT_NUMBER, MANAGED_BY) 
+VALUES ('U13', '333-333-3333', 'U15');
+
+INSERT INTO dianowner (OWNER_ID, CONTACT_NUMBER, MANAGED_BY) 
+VALUES ('U14', '444-444-4444', NULL);
+
+
+
+
+
+
+
+
+
+CREATE TABLE dianmanager ( MANAGER_ID VARCHAR2(3),
+MANAGED_BY VARCHAR2(4));
+
+INSERT INTO dianmanager (MANAGER_ID, MANAGED_BY) 
+VALUES ('U14', 'null');
+
+INSERT INTO dianmanager (MANAGER_ID, MANAGED_BY) 
+VALUES ('U15', 'U14');
